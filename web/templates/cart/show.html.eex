@@ -1,0 +1,23 @@
+<h2>Show cart</h2>
+
+<ul>
+
+  <li>
+    <strong>Prodcut name:</strong>
+    <%= @cart.prodcut_name %>
+  </li>
+
+  <li>
+    <strong>Price:</strong>
+    <%= @cart.price %>
+  </li>
+
+  <li>
+    <strong>Quantity:</strong>
+    <%= @cart.quantity %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: cart_path(@conn, :edit, @cart) %>
+<%= link "Back", to: cart_path(@conn, :index) %>
