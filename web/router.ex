@@ -21,6 +21,7 @@ defmodule PhoenixWebCarts.Router do
     get "/hello/:messenger", HelloController, :show
     resources "/users", UserController
     resources "/carts", CartController
+    resources "/products", ProductController
   end
 
   # Other scopes may use custom stacks.
